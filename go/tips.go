@@ -19,6 +19,7 @@ func (u user) notify() {
 }
 
 // changeEmail implements a method with a pointer receiver.
+//! This injects the function into struct
 func (u *user) changeEmail(email string) {
     u.email = email
 }
